@@ -3,6 +3,14 @@ const d = new Date()
 
 btn.addEventListener('click', function () {
   let amount = document.getElementById('principal').value
+  if (Number(amount) === 0) {
+    alert('please enter a positive number')
+    return
+  }
+  if (Number(amount) < 0) {
+    alert('enter a positive number')
+    return
+  }
   let interestInput = document.getElementById('interestInput').value
   let years = document.getElementById('years').value
   let result = amount * (interestInput / 100) * years
