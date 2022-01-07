@@ -67,4 +67,7 @@ body span {
   background: red;
 }
 
+p span {
+  background-color: #ffff00;
+}
 /*  */
