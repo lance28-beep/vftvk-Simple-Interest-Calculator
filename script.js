@@ -5,10 +5,12 @@ btn.addEventListener('click', function () {
   let amount = document.getElementById('principal').value
   if (Number(amount) === 0) {
     alert('please enter a positive number')
+    document.getElementById('principal').focus()
     return
   }
   if (Number(amount) < 0) {
     alert('enter a positive number')
+    document.getElementById('principal').focus()
     return
   }
   let interestInput = document.getElementById('interestInput').value
